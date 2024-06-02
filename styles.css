@@ -1,0 +1,357 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: linear-gradient(45deg, #ff6f61, #de4dff);
+    color: white;
+}
+
+.navbar-left .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-left .logo .logo-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar-right a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .navbar-right {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-right.active {
+        display: flex;
+    }
+
+    .navbar-right a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}/*img-section*/
+.picture-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #cedfff, #646a74);
+    overflow: hidden;
+}
+
+.picture-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.animated-picture {
+    width: 500px;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.animated-picture:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .picture-container {
+        padding: 10px;
+    }
+
+    .animated-picture {
+        width: 100%;
+    }
+}
+/*main*/
+.pole {
+    margin: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poll-container {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.poll-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.poll-results {
+    margin-bottom: 20px;
+}
+
+.poll-option {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+    position: relative;
+}
+
+.result-bar {
+    background: linear-gradient(45deg, #ff6f61, #de4dff);
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.result-bar:hover {
+    background: linear-gradient(45deg, #de4dff, #ff6f61);
+}
+
+.poll-option span {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: white;
+}
+
+.poll-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+button {
+    background: linear-gradient(45deg, #ff6f61, #de4dff);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #de4dff, #ff6f61);
+}
+/*section-2*/
+.view{
+    margin: 55px;
+}
+.diagrams-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.diagram {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diagram img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.diagram h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.diagram p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.diagram:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/*section-third*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.highlight-section {
+    text-align: center;
+    background: linear-gradient(45deg, #5e6a81, #000000);
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.highlight-text {
+    font-size: 2.5rem;
+    margin: 0 0 20px;
+    position: relative;
+    animation: slide-in 2s ease-out forwards;
+}
+
+.highlight-description {
+    font-size: 1.2rem;
+    margin: 0;
+    position: relative;
+    animation: fade-in 2.5s ease-out forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .highlight-text {
+        font-size: 2rem;
+    }
+
+    .highlight-description {
+        font-size: 1rem;
+    }
+}
+
+/*footer*/
+.footer-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    list-style: none;
+}
+
+.footer-section ul {
+    padding: 0;
+}
+
+.footer-section li {
+    padding: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #ff6f61;
+}
+
+.social-media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
